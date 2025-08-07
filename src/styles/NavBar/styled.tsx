@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
     left: 0;
     ${(wWidth > wHeight) ?'top: 0;' :'bottom: 0;'}
 
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem 0 1.5rem ;
 `
 
 export const StyledNav = styled.nav`
@@ -19,4 +19,5 @@ export const StyledNav = styled.nav`
     align-items: center;
     height: fit-content;
     width: 100%;
+    margin-bottom: 0.5rem;
 `

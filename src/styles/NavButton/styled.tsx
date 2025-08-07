@@ -7,13 +7,13 @@ export const StyledNavButton = styled.button`
     border-radius: 50%;
     padding: 0.5rem;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
-    transition: ease-in-out 0.3s;
-    transition-property: background-color, color, box-shadow, transform;
+    transition: 0.3s ease-in-out;
+
     &:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
         background-color: #8B0000;
-        transform: scale(1.05);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 `
+

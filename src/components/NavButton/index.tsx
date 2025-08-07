@@ -1,17 +1,15 @@
-import { StyledNavButton } from "../../styles/NavButton";
+import { StyledNavButton } from "../../styles/NavButton/styled";
 import { IoCart, IoClose } from "react-icons/io5";
-import { useState } from "react";
 
-const NavButton = () => {
-    const [isActive, setIsActive] = useState(false);
-    
-    const handleClick = () => {
-        setIsActive(!isActive);
-        // Additional logic for handling cart actions can be added here
-    };
+interface NavButtonProps {
+    onClick?: () => void;
+    isActive?: boolean;
+}
+
+const NavButton = ({ onClick, isActive }: NavButtonProps) => {
 
     return (
-        <StyledNavButton onClick={handleClick}>
+        <StyledNavButton onClick={onClick}>
             {isActive ? <IoClose size={36}/> : <IoCart size={36}/>}
         </StyledNavButton>
     );
