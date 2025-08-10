@@ -37,7 +37,8 @@ export const StyledNavCart = styled.div<StyledNavCartProps>`
     `};
 
     gap: 1rem;
-    padding: ${props => props.isActive ? '0.5rem' : '0'};
+    padding: ${props => props.isActive ? '0.5rem 1rem' : '0 1rem'};
+    ${(wWidth < wHeight) ? 'padding: 0 0.5rem;' :''}
 `
 
 export const StyledCart = styled.section<StyledNavCartProps>`
@@ -95,4 +96,12 @@ export const StyledCartButton = styled.button`
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
         background-color: #8B0000;
     }
+`
+
+export const StyledClearCartButton = styled.button`
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+    border: none;
+    margin-bottom: 0.5rem;
 `

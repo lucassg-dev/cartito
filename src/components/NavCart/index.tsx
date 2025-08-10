@@ -1,4 +1,4 @@
-import { StyledNavCart, StyledCart, StyledCartButton } from "../../styles/NavCart/styled";
+import { StyledNavCart, StyledCart, StyledCartButton, StyledClearCartButton } from "../../styles/NavCart/styled";
 import CartItem from "../CartItem";
 
 interface NavCartProps {
@@ -22,7 +22,8 @@ const NavCart = ({ isActive }: NavCartProps) => {
                     <CartItem />
                 </section>
             </StyledCart>
-            <StyledCartButton>Finalizar Compra</StyledCartButton>
+            <StyledCartButton>Finalizar Pedido</StyledCartButton>
+            <StyledClearCartButton><small>Limpar Carrinho</small></StyledClearCartButton>
         </StyledNavCart>
     )
 };
