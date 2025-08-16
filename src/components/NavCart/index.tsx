@@ -1,4 +1,4 @@
-import { StyledNavCart, StyledCart, StyledCartButton, StyledClearCartButton, StyledCartHeader, StyledCartFooter } from "../../styles/NavCart/styled";
+import { StyledNavCart, StyledCart, StyledCartButton, StyledClearCartButton, StyledCartHeader, StyledCartFooter } from "./styled";
 import CartItem from "../CartItem";
 
 interface NavCartProps {

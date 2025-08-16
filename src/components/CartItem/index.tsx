@@ -1,4 +1,4 @@
-import { StyledCartItem, StyledCartItemRow, StyledCartItemColumn, StyledCartItemButton } from "../../styles/CartItem/styled";
+import { StyledCartItem, StyledCartItemRow, StyledCartItemColumn, StyledCartItemButton } from "./styled";
 import { MdEdit } from "react-icons/md";
 import { FaTrashAlt } from "react-icons/fa";
 

@@ -1,4 +1,4 @@
-import { StyledDisplay } from "../../styles/Display/styled";
+import { StyledDisplay } from "./styled";
 import ProductCard from "../../ProductCard";
 
 const Display = ()=> {

@@ -1,4 +1,4 @@
-import { StyledNavButton } from "../../styles/NavButton/styled";
+import { StyledNavButton } from "./styled";
 import { IoCart, IoClose } from "react-icons/io5";
 
 interface NavButtonProps {

@@ -1,4 +1,4 @@
-import { StyledProductCard, StyledProductHeader, StyledProductFooter, StyledProductImg, StyledProductButton } from "../styles/ProductCard/styled";
+import { StyledProductCard, StyledProductHeader, StyledProductFooter, StyledProductImg, StyledProductButton } from "./styled";
 
 const ProductCard = () => {
     return (

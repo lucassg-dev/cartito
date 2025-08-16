@@ -1,4 +1,4 @@
-import { StyledHeader, StyledNav } from "../../styles/NavBar/styled";
+import { StyledHeader, StyledNav } from "./styled";
 import NavButton from "../NavButton";
 import { useState } from "react";
 import NavCart from "../NavCart";
