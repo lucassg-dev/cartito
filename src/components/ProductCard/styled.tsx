@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { wWidth, wHeight } from "../utils/Viewport";
+import { wWidth, wHeight } from "../../utils/Viewport";
 
 
 export const StyledProductCard = styled.div`

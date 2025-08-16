@@ -1,28 +1,22 @@
 import { StyledDisplay } from "./styled";
-import ProductCard from "../../ProductCard";
+import DisplayCategory from "../DisplayCategory";
+import ProductCard from "../ProductCard";
 
-const Display = ()=> {
-    return(
+const Display = () => {
+    return (
         <StyledDisplay>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <DisplayCategory categoryName="Lanches">
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+            </DisplayCategory>
+            <DisplayCategory categoryName="Pizzas">
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+            </DisplayCategory>
         </StyledDisplay>
     )
 };

@@ -100,6 +100,8 @@ export const StyledCartButton = styled.button`
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     width: fit-content;
 
+    font-size: 1rem;
+
     transition: 0.3s ease-in-out;
 
 
@@ -121,5 +123,5 @@ export const StyledCartFooter = styled.footer`
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    gap: 10px;
+    gap: 1rem;
 `
