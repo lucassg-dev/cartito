@@ -11,6 +11,8 @@ export const StyledHeader = styled.header`
     ${(wWidth > wHeight) ?'top: 0;' :'bottom: 0;'}
 
     padding: 0.5rem 1.5rem 0 1.5rem ;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 `
 
 export const StyledNav = styled.nav`

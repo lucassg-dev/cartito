@@ -1,4 +1,4 @@
-import { StyledNavCart, StyledCart, StyledCartButton, StyledClearCartButton } from "../../styles/NavCart/styled";
+import { StyledNavCart, StyledCart, StyledCartButton, StyledClearCartButton, StyledCartHeader, StyledCartFooter } from "../../styles/NavCart/styled";
 import CartItem from "../CartItem";
 
 interface NavCartProps {
@@ -8,11 +8,12 @@ interface NavCartProps {
 const NavCart = ({ isActive }: NavCartProps) => {
     return(
         <StyledNavCart isActive={isActive}>
-            <StyledCart isActive={isActive}>
-                <h3 style={{borderBottom: "1px dashed brown", paddingBottom: "0.5rem"}}>
+                <StyledCartHeader>
+                    <h3 style={{borderBottom: "1px dashed brown", paddingBottom: "0.5rem"}}>
                     Carrinho
-                </h3>
-                <section>
+                    </h3>
+                </StyledCartHeader>
+            <StyledCart isActive={isActive}>
                     <CartItem />
                     <CartItem />
                     <CartItem />
@@ -20,10 +21,11 @@ const NavCart = ({ isActive }: NavCartProps) => {
                     <CartItem />
                     <CartItem />
                     <CartItem />
-                </section>
             </StyledCart>
-            <StyledCartButton>Finalizar Pedido</StyledCartButton>
-            <StyledClearCartButton><small>Limpar Carrinho</small></StyledClearCartButton>
+            <StyledCartFooter>
+                <StyledCartButton>Finalizar Pedido</StyledCartButton>
+                <StyledClearCartButton><small>Limpar Carrinho</small></StyledClearCartButton>
+            </StyledCartFooter>
         </StyledNavCart>
     )
 };
