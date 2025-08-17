@@ -10,7 +10,7 @@ const NavCart = ({ isActive }: NavCartProps) => {
         <StyledNavCart isActive={isActive}>
                 <StyledCartHeader>
                     <h3 style={{borderBottom: "1px dashed brown", paddingBottom: "0.5rem"}}>
-                    Carrinho
+                        Carrinho
                     </h3>
                 </StyledCartHeader>
             <StyledCart isActive={isActive}>
